@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap%22;%3C/u%3E%3C/a%3E");
+
+:root {
+    --navbar-bg: #127b96;
+    --navbar-color: #fff;
+    --navbar-active-bg: #bbbbbbdc;
+    --navbar-active-color: #000000;
+    --navbar-hover-bg: #0a4c83;
+    --header-bg:#94a3a8;
+    --cinza-escuro: #17273b;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+   font-family: Roboto,sans-serif;
+   font-size: 14px;
+}
+
+nav{
+    width: 100%;
+    height: 4em;
+    background-color: var(--navbar-bg);
+    color:var(--navbar-color);
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-left: 10px;
+    padding-right: 10px;  
+}
+
+a{
+    text-decoration: none;
+}
+
+ul > li{
+    display:inline; 
+    list-style: none;
+}
+
+a{
+    color:var(--navbar-color);
+    padding: 5px;
+    font-size: 1.3em;
+}
+
+ul > li >a:hover:not(a.active){ /*não permite que eu selecione o inicio*/
+    background-color: var(--navbar-hover-bg);
+}
+
+.active{
+    border-bottom: 2px solid var(--navbar-color);
+
+}
+
+.user-menu > a {
+   display: inline-flex;
+   flex-direction: column;
+    align-items:center;
+}
+
+.user-menu > a >span{
+    font-size: 0.6em;
+}
+
+header {
+    height: calc(100vh - 3em);
+    background-color: var(--header-bg);
+    background: url("https://www.lenovo.com/medias/lenovo-laptop-ideapad-3-15-intel-hero.png?context=bWFzdGVyfHJvb3R8MjczNzUyfGltYWdlL3BuZ3xoMGQvaDYxLzE0MTkwNTI5Njc1Mjk0LnBuZ3xmYTMyYzBlZmE5NTcyNzAyMTZhZmJlMmFmOTVjMmZmYTM4ZTdjNWFiZWM0YzE5YWQ2YzcxNmM3OTE2MThjZmE4");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.button {
+    background-color: var(--cinza-escuro);
+    box-shadow: #120f2c 3px 2px 8px;
+    font-size: 1em;
+    padding: 8px;
+    max-width: 300px;
+    text-align: center;
+    
+}
+
+.button:hover{
+    filter:brightness(80%);
+}
+
+.button-primary {
+    background-color:cadetblue;
+    color:#000000;
+    font-weight: bold;
+    border-radius: 5%;
+}
+
+header{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    padding-left: 15px;
+}
+
+.header-description{
+    max-width: 400px;
+    font-weight: 300px;
+    text-align:left;
+    line-height: 20px;
+    font-size: 1em;
+}
+
+hgroup >h1{
+    font-size: 2em;
+    font-weight: 800;
+    line-height: 20px;
+    margin-bottom: 15px;
+    color: var(--cinza-escuro);
+}
+
+hgroup >h2{
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+#ofertas{
+    padding-top: 3em;
+    display:flex;
+    justify-content: space-evenly;
+    min-height: 100vh;
+}
+
+.card{
+    width: 300px;
+    height: 500px;
+    box-shadow: #127b96 3px 5px 10px;
+    border-radius: 5%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+
+.card > img{
+    width: 300px;
+
+}
+
+.card > h3{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.card .span{
+    font-weight: bold;
+
+}
+
+.card-button{
+    background-color:#127b96;
+    padding: 10px;
+    border-radius: 7px;
+}
+ 
+.card-button:hover{
+    filter:brightness(80%);
+    
+}
+
+#newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    
+}
+
+ #newsletter > h1{
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 15px;
+ }
+
+ #newsletter > form > input{
+    border:none;
+    background-color: #120f2c;
+    padding: 5px;
+    border-radius: 5px;
+    width: 300px;
+ }
+
+ #newsletter > form > input::-webkit-input-placeholder{
+    color:#17273b;
+    font-weight: bold;
+ }
+
+ #newsletter > form > input::-moz-placeholder{
+    color:#010a16;
+    font-weight: bold;
+ }
+
+ #newsletter > form > button{
+    border:none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #127b96;
+    color:#fff;
+ }
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #127b96;
+    color:#fff;
+    margin-top: 15px;
+ }
+
+ .footer-section{
+    display: flex;
+
+ }.payment-methods > .payments >img{
+    max-width: 50px;
+ }
