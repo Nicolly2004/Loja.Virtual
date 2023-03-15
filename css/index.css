@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap%22;%3C/u%3E%3C/a%3E");
-
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"");
 :root {
     --navbar-bg: #127b96;
     --navbar-color: #fff;
@@ -8,6 +8,9 @@
     --navbar-hover-bg: #0a4c83;
     --header-bg:#94a3a8;
     --cinza-escuro: #17273b;
+    --vermelho:#f71616e8;
+    --amarelo: rgb(255, 239, 19);
+    --verde-musgo: rgba(8, 92, 8, 0.658);
 }
 
 *{
@@ -70,7 +73,7 @@ ul > li >a:hover:not(a.active){ /*não permite que eu selecione o inicio*/
 
 header {
     height: calc(100vh - 3em);
-    background-color: var(--header-bg);
+    background-color: var(--navbar-bg);
     background: url("https://www.lenovo.com/medias/lenovo-laptop-ideapad-3-15-intel-hero.png?context=bWFzdGVyfHJvb3R8MjczNzUyfGltYWdlL3BuZ3xoMGQvaDYxLzE0MTkwNTI5Njc1Mjk0LnBuZ3xmYTMyYzBlZmE5NTcyNzAyMTZhZmJlMmFmOTVjMmZmYTM4ZTdjNWFiZWM0YzE5YWQ2YzcxNmM3OTE2MThjZmE4");
     background-position: right;
     background-repeat: no-repeat;
@@ -125,8 +128,17 @@ hgroup >h2{
     font-weight: 100;
 }
 
-#ofertas{
-    padding-top: 3em;
+#ofertas > h1{
+    line-height: 25px;
+    font-size: 2em;
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+
+#ofertas > .lista-ofertas{
+    margin-top: 3em;
     display:flex;
     justify-content: space-evenly;
     min-height: 100vh;
@@ -160,6 +172,21 @@ hgroup >h2{
 
 }
 
+.favorito-button{
+border: 1px solid var(--vermelho);
+border-radius: 7px;
+padding: 10px;
+ margin-left: 5px;
+ color: var(--vermelho)
+}
+
+.group-button{
+     display: flex;
+     align-items:center;
+     justify-content: space-between;
+     margin-bottom: 10px;
+}
+
 .card-button{
     background-color:#127b96;
     padding: 10px;
@@ -188,19 +215,19 @@ hgroup >h2{
 
  #newsletter > form > input{
     border:none;
-    background-color: #120f2c;
+    background-color: var(--cinza-escuro);
     padding: 5px;
     border-radius: 5px;
     width: 300px;
  }
 
  #newsletter > form > input::-webkit-input-placeholder{
-    color:#17273b;
+    color:var(--navbar-color);
     font-weight: bold;
  }
 
  #newsletter > form > input::-moz-placeholder{
-    color:#010a16;
+    color:var(--cinza-escuro);
     font-weight: bold;
  }
 
@@ -218,11 +245,80 @@ footer{
     background-color: #127b96;
     color:#fff;
     margin-top: 15px;
+    min-height: 35vh;
  }
 
- .footer-section{
-    display: flex;
+div.footer{
+   /* display: flex;
+    align-items: center;
+    justify-content: space-between;*/
 
- }.payment-methods > .payments >img{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    background-color: var(--cinza-escuro);
+ }
+/*corrige alinhamento da footer que não alinha com o display fles em alguns navegadores*/
+ div.footer >p{
+    display: inline-block;
+ }
+
+ .social-media{
+    float: right;
+ }
+ /*fim da correção de alinhamento em outros navegadores*/
+.footer-section{
+    display: flex;
+    flex-grow: 1;
+    gap:5px;
+    justify-content: space-between;
+    margin-top:10px;
+    margin-left:5px;
+    margin-right: 10px;
+}
+
+.sobre-nos{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    gap:5px;
+    max-width: 300px;
+}
+
+.links-uteis{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.links-uteis > h2{
+    margin-bottom: 5px;
+}
+
+.links-uteis > a {
+    padding: 0;
+    margin-bottom: 5px;
+
+}
+
+.links-uteis > a:hover{
+    filter:brightness(80%)
+}
+
+.payment-methods{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+.payment-methods > .payments{
+   align-self: flex-end;
+   float:right ;
+   max-width: fit-content;
+
+}
+
+
+.payment-methods > .payments >img{
     max-width: 50px;
  }
