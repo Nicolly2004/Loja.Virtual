@@ -25,6 +25,31 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    margin-left: 10px;
+}
+
+
+.produto > main{
+    display: flex;
+    margin-top: 15px;
+}
+
+
+.produto > main > aside{
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+}
+
+.produto > main> aside> img{
+    /* Espreme as imagens*/
+    max-width: 80px;
+    border: 5px;
+    border: 1px solid #02333f;
+}
+
+.produto > main> img.active{
+    border: 2px solid var(--amarelo);
 }
 
 hgroup > h1{
