@@ -13,3 +13,26 @@
     --verde-musgo: rgba(8, 92, 8, 0.658);
 }
 
+#produto {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.produto{
+    max-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+hgroup > h1{
+    margin-bottom:5px;
+}
+
+hgroup > h5{
+    font-size: 300;
+    color: var(--navbar-hover-bg);
+    font-size: 1em;
+}
