@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap%22;%3C/u%3E%3C/a%3E);
+
+:root{
+  --verde-escuro: #015229c4;
+  --cinza-claro:#b3b1b1;
+  --cinza-escuro:#636363;
+  --verde-claro:#007763;
+  --verde-agua:#08acb8;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto,sans-serif;
+    font-size: 14px;
+ }
+
+
+header {
+   /* background-image: linear-gradient(to right, var(--cinza-escuro), var(--verde-agua), var(--cinza-claro) );*/
+   display: flex;
+   justify-content:space-between ;
+   align-items: center;
+   padding: 10px 5px;
+   margin: 0px 15px;
+   border-bottom: 1px solid var(--cinza-escuro);
+}
+
+header > h2 > a {
+    color:rgb(16, 177, 169);
+    text-decoration: none;
+}
+
+header > h2> a :hover{
+    filter: brightness(80%);
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 15px;
+    margin-top: 15px;
+}
+
+section > main{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    
+}
+
+
+section >main > .steps{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--verde-claro);
+}
+
+section > main> .steps > a{
+    text-decoration: none;
+    color:rgb(33, 116, 116);
+}
+
+section > main> .steps > a:hover{
+filter:brightness(80%);
+}
+
+.pagamento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pagamento > span{
+    color:rgb(255, 0, 0);
+}
+
+#itens> .itens{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+
+}
+
+.item >img{
+ max-width: 80px;   
+}
+
