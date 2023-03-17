@@ -7,10 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja Virtual</title>
     <link rel="stylesheet" href="css/index.css" />
-    
+    <style type="text/css">
+        nav>ul>li{
+            display: inline-block;
+            height: 42px;
+        }
+
+        ul {
+            height: 42px;
+        }
+
+        nav>ul>li>a{
+            line-height: 42px;
+        }
+    </style>
 </head>
 
 <body>
+
     <nav>
         <a href="#">
          <h1>NK-electron</h1>
@@ -28,7 +42,7 @@
 
         </ul>
         <div class="user-menu">
-            <a href="#">
+            <a href="perfil.html">
                 <i class="fa fa-user"></i>
                 <span>Perfil</span>
             </a>
@@ -38,7 +52,7 @@
                 <span>Favoritos</span>
             </a>
 
-            <a href="#">
+            <a href="checkout.html">
                 <i class="fa fa-shopping-cart"></i>
                 <span>Carrinho</span>
             </a>
@@ -68,7 +82,13 @@
                  alt="Foto ilustrativa do produto" />
                 <h3>Smart Tv 85 Polegadas QLED 4K |85Q70A|</h3>
                 <h2>Sansung Brasil</h2>
-                <span>R$ 12.824,05</span>
+                <span class="tooltip">R$ 12.824,05
+                    <span class="tooltip">
+                        <i class="fa fa-question"></i>
+                        <span class="tooltip-text" style="background-color: cadetblue;">Valor promocional enquanto enquanto  durarem o estoque</span>
+                    </span>
+                </span>
+                
                 <div class="stars">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -91,8 +111,10 @@
                 <img src="https://www.jbl.com.br/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw567185dd/JBL_JR310_Product%20Image_Hero_Red.png?sw=537&sfrm=png"
                     alt="Foto ilustrativa do produto" />
                 <h3>Fone Bluetooth</h3>
-                <span>R$ 75,98</span>
-
+                <span class="tooltip">R$ 75,98
+                    <span class="tooltip-text" style="visibility :visible;">Valor Promocional</span>
+                </span>
+            
                 <div class="stars">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -117,9 +139,14 @@
                     alt="Foto ilustrativa do produto" />
                 <h3>Geladeira Side - Brastemp 4 Portas </h3>
                 <h4>Frost Free Inverse 543L BRO90AK</h4>
-                <span>R$ 21.998,50</span>
-
-
+                <span>R$ 21.998,50
+                    <span class="tooltip">
+                        <i class="fa fa-question"></i>
+                        <span class="tooltip-text">Valor promocional enquanto enquanto  durarem o estoque</span>
+                    </span>
+    
+                </span>
+                
                 <div class="stars">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>

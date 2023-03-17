@@ -42,8 +42,24 @@ a{
     font-size: 1.3em;
 }
 
-ul > li >a:hover:not(a.active){ /*não permite que eu selecione o inicio*/
+
+
+ul > li >a:hover:not(li > a.active){ /*não permite que eu selecione o inicio*/
     background-color: var(--navbar-hover-bg);
+}
+
+ul {
+    height: 42px;
+}
+
+nav>ul>li>a{
+    line-height: 42px;
+}
+
+
+nav>ul>li{
+    display: inline-block;
+    height: 42px;
 }
 
 .active{
@@ -311,4 +327,28 @@ div.footer{
 
 .payment-methods > .payments >img{
     max-width: 50px;
+ }
+
+
+.tooltip{
+    cursor: help;
+}
+
+
+.tooltip > .tooltip-text{
+    visibility: hidden;
+    background-color: #2792bd;
+    color:#fff;
+    text-align: center;
+    border-radius: 7px;
+    padding: 20px;
+    max-width: 250px;
+
+    z-index: 1;
+    position: absolute;
+ }
+
+.tooltip:hover > .tooltip-text{
+    visibility: visible;
+    transition: visibility 0.3s ease-in 100ms;
  }
