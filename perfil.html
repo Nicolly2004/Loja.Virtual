@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil | Nk-electron </title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/perfil.css">
+</head>
+<body>
+    <nav>
+        <h1>NK-electron</h1>
+        <div class="user-menu">
+            <a href="#">
+                <i class="fa fa-user"></i>
+                <span>Perfil</span>
+            </a>
+
+            <a href="#">
+                <i class="fa fa-heart"></i>
+                <span>Favoritos</span>
+            </a>
+
+            <a href="#">
+                <i class="fa fa-shopping-cart"></i>
+                <span>Carrinho</span>
+            </a>
+        </div>
+    </nav>
+
+    <h1>Meu Perfil</h1>
+    <section class="user-details"> 
+       <aside class="user-profile">
+        <img src="img/pngegg.png" class="user-img">
+        <span>Nicolly Reis</span>
+        <a href="#editar">Editar</a>
+       </aside>
+       <main id="editar">
+        <form action="" id="edit-form">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="name" name="nome"/>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email"/>
+            </div>
+           <button class="button-login">Salvar
+            <i class="fa fa-floopy-o"></i>
+           </button>
+           </form>
+          <div class="collapse">
+            <button class="button collapse-button" type="button">Endereço</button>
+            <form id="form-endereco">
+                <div class="form-group">
+                    <label for="rua">Rua:</label>
+                    <input type="text"  name="rua"
+                    id="rua"/>
+                </div>
+    
+                <div class="form-group">
+                    <label for="numero">Número:</label>
+                    <input type="text"  name="numero"
+                    id="número"/>
+                </div>
+    
+                <div class="form-group">
+                    <label for="cep">Cep:</label>
+                    <input type="text"  name="cep"
+                    id="cep"/>
+                </div>
+    
+                <div class="form-group">
+                    <label for="bairro">Bairro:</label>
+                    <input type="text"  name="bairro"
+                    id="bairro"/>
+                </div>
+    
+                <div class="form-group">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text"  name="cidade"
+                    id="cidade"/>
+                </div>
+    
+                <div class="form-group">
+                    <label for="Estado">Estado:</label>
+                    <input type="text"  name="estado"
+                    id="estado"/>
+                </div>
+               </form>
+          </div>
+           
+        </form>
+       </main>
+    </section>
+    <footer>
+        <p>
+            &copy: NK-electron - Todos os Direitos Reservados
+        </p>
+    </footer>
+</body>
+</html>
