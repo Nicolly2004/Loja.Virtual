@@ -116,3 +116,10 @@ nav{
 .user-menu > a > span{
     font-size: 0.6em;
 }
+
+footer{
+    text-align: center;
+    background-color: darkgrey;
+    color:darkslategrey;
+    padding: 10px 0;
+}
