@@ -164,14 +164,15 @@ hgroup >h2{
     padding-bottom: 8px;
 }
 
-.card > img{
+.imagem-produto, .card > img{
     width: 300px;
 
 }
 
-.card > h3{
+.titulo-produto, .card > h3{
     text-align: center;
     font-size: 1.5em;
+    color: #000000;
 }
 
 .card .span{

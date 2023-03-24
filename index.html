@@ -23,7 +23,7 @@
     </style>
 </head>
 
-<body>
+<body onload="main()">
 
     <nav>
         <a href="#">
@@ -75,125 +75,7 @@
     </header>
     <section id="ofertas">
         <h1>Conheça as novas ofertas </h1>
-<div class="lista-ofertas">
-        
-            <div class="card">
-                <img src= https://images.samsung.com/is/image/samsung/p6pim/br/qn85q70aagxzd/gallery/br-qled-tv-qn85q70aagxzd-qn--q--aagxzd-532139942?$650_519_PNG$                  
-                 alt="Foto ilustrativa do produto" />
-                <h3>Smart Tv 85 Polegadas QLED 4K |85Q70A|</h3>
-                <h2>Sansung Brasil</h2>
-                <span class="tooltip">R$ 12.824,05
-                    <span class="tooltip">
-                        <i class="fa fa-question"></i>
-                        <span class="tooltip-text" style="background-color: cadetblue;">Valor promocional enquanto enquanto  durarem o estoque</span>
-                    </span>
-                </span>
-                
-                <div class="stars">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-                <div class="group-button">
-                    <a href="" class="card-button">
-                        Adicionar ao Carrinho
-                        <i class="fa fa-shopping-cart"></i>
-                    </a>
-                    <a href="" class="favorito-button">
-                        <i class="fa fa-heart"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="https://www.jbl.com.br/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw567185dd/JBL_JR310_Product%20Image_Hero_Red.png?sw=537&sfrm=png"
-                    alt="Foto ilustrativa do produto" />
-                <h3>Fone Bluetooth</h3>
-                <span class="tooltip">R$ 75,98
-                    <span class="tooltip-text" style="visibility :visible;">Valor Promocional</span>
-                </span>
-            
-                <div class="stars">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-
-                <div class="group-button">
-                    <a href="" class="card-button">
-                        Adicionar ao Carrinho
-                        <i class="fa fa-shopping-cart"></i>
-                    </a>
-                    <a href="" class="favorito-button">
-                        <i class="fa fa-heart"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="https://a-static.mlcdn.com.br/1500x1500/geladeira-side-by-side-brastemp-4-portas-frost-free-inverse-543l-bro90ak-consul/lojascolombooficial/1256593/05fb63f46a7c1441859c7ec03ae4ef32.jpeg"
-                    alt="Foto ilustrativa do produto" />
-                <h3>Geladeira Side - Brastemp 4 Portas </h3>
-                <h4>Frost Free Inverse 543L BRO90AK</h4>
-                <span>R$ 21.998,50
-                    <span class="tooltip">
-                        <i class="fa fa-question"></i>
-                        <span class="tooltip-text">Valor promocional enquanto enquanto  durarem o estoque</span>
-                    </span>
-    
-                </span>
-                
-                <div class="stars">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-
-                <div class="group-button">
-                    <a href="" class="card-button">
-                        Adicionar ao Carrinho
-                        <i class="fa fa-shopping-cart"></i>
-                    </a>
-                    <a href="" class="favorito-button">
-                        <i class="fa fa-heart"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="https://www.lg.com/br/images/home-theaters/bh9630tw/gallery/medium-01.jpg"
-                    alt="Foto ilustrativa do produto" />
-                <h3>Home Theater 1100W LG</h3>
-                <h4>Tecnologia sem Fio</h4>
-                <span>R$ 1.800,00</span>
-
-
-                <div class="stars">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-
-
-                <div class="group-button">
-                    <a href="" class="card-button">
-                        Adicionar ao Carrinho
-                        <i class="fa fa-shopping-cart"></i>
-                    </a>
-                    <a href="" class="favorito-button">
-                        <i class="fa fa-heart"></i>
-                    </a>
-                </div>
-            </div>
-        
+<div class="lista-ofertas"></div> 
     </section>
 
 
@@ -259,7 +141,40 @@
 
             </div>
     </footer>
+    <div style="display: none;" id="card-modelo">
+        <div class="card">
+       <a href="{link-produto}">
+        <img src="{imagem-produto}" class="imagem-produto" alt="{descricao-imagem-produto}" />
+       </a>            
+          
+           <a href="{link-produto}">
+            <h3 class="titulo-produto">{titulo-produto}</h3>
+           </a>
 
+            <span>{preco-produto}</span>
+
+
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+
+
+            <div class="group-button">
+                <a href="" class="card-button">
+                    Adicionar ao Carrinho
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+                <a href="" class="favorito-button">
+                    <i class="fa fa-heart"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+     <script type="text/Javascript" src="js/index.js"></script>
 </body>
 
 </html>

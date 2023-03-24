@@ -87,7 +87,7 @@ filter:brightness(80%);
     color:rgb(255, 0, 0);
 }
 
-#itens> .itens-container > .item{
+#itens> .items-container > .item{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -97,7 +97,7 @@ filter:brightness(80%);
 
 }
 
-#items > .items-container{
+#itens > .items-container{
     flex-grow: 1;
 }
 
