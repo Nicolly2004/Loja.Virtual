@@ -27,3 +27,14 @@
     background-color: #272b29b2;
     color:#ebf8eb;
 }
+
+.message-error{
+  color:rgb(4, 124, 114);
+  font-weight: bold;
+  font-size: 12px;
+
+}
+
+.input-error{
+    border:1px solid var(--cinza-escuro) !important;
+}
