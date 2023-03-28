@@ -11,15 +11,17 @@
 <body>
     <main>
         <h1>Faça login</h1>
-        <form>
+        <form onsubmit="return validaFormulario()" name="login">
         <div class="form-group">
             <label for="email">E-mail</label>
             <input type="email" required id="email" name="email" placeholder="*****@*****.com.br"/>
+            <span class="message-error email"></span>
         </div>
     </br>
         <div class="form-group">
             <label for="senha">Senha</label>
             <input type="password" required id="senha" name="senha" />
+            <span class="message-error senha"></span>
         </div>
        
         <button type="submit" class="button-login">Entrar<i class="fa fa-sing-in"></i></button>
@@ -30,5 +32,6 @@
             <span>Não possui cadastro? <a href="registro.html">Crie sua conta</a></span>
         </div>
     </main>
+    <script type="text/javascript" src="js/login.js"></script>
 </body>
 </html>

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/checkout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body onload="main()">
         <header>
             <h1>NK-electron</h1>
 
@@ -35,21 +35,10 @@
             <div class="steps" id="itens">
                 <h2>Itens para Envio</h2>
                 <div class="items-container">
-                <div class="item">
-                    <img src="https://a-static.mlcdn.com.br/1500x1500/geladeira-side-by-side-brastemp-4-portas-frost-free-inverse-543l-bro90ak-consul/lojascolombooficial/1256593/05fb63f46a7c1441859c7ec03ae4ef32.jpeg"/>
-                <h3>Geladeira Side - Brastemp 4 Portas</h3>
-                <span>Qtd: 1</span>
-                <span class="preco">R$ 21.998,50</span>
+               
                 </div>
-            
-            <div class="item">
-                <img src="https://images.samsung.com/is/image/samsung/p6pim/br/qn85q70aagxzd/gallery/br-qled-tv-qn85q70aagxzd-qn--q--aagxzd-532139942?$650_519_PNG$"/>
-            <h3>Smart Tv 85 Polegadas QLED 4K |85Q70A|</h3>
-            <span>Qtd: 1 </span>
-            <span class="preco">R$ 12.824,05</span>
+                    <button class="finalizar-pedido">Finalizar Pedido</button>
             </div>
-            </div>
-            <button class="finalizar-pedido">Finalizar Pedido</button>
         </div>
         </main>
         <aside> 
@@ -62,7 +51,7 @@
                </div>
                <div class="detalhe">
                 <p>Itens:</p>
-                <p>R$ 21.998,50</p> 
+                <p>R$ 12,824,05</p> 
               </div>
             
                <div class="detalhe">
@@ -73,12 +62,13 @@
                 
             <div class="total-pedido">
                 <h3>Total do Pedido</h3>
-                <h3>R$ 47.322,55</h3>
+                <h3>R$ 34.822,55</h3>
             </div>
         </aside>
       </section>
       <footer>
         &copy; NK-electron - Todos os direitos reservados
       </footer>
+      <script type = "text/javascript" src="js/checkout.js"></script>
 </body>
 </html>
