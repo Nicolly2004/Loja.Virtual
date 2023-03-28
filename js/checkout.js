@@ -2,13 +2,13 @@ function buscaItens(){
     var itens = [{
         nome: "Smart Tv 85 Polegadas QLED 4K |85Q70A|",
         quantidade: 1,
-        imagem:"https://images.samsung.com/is/image/samsung/p6pim/br/qn85q70aagxzd/gallery/br-qled-tv-qn85q70aagxzd-qn--q--aagxzd-532139942?$650_519_PNG$",
-        preco: 12.824,
+        imagem:"img/TV.qled.avif",
+        preco: 12824,
     },{
         nome: "Geladeira Side - Brastemp 4 Portas",
         quantidade: 1,
-        imagem:"https://a-static.mlcdn.com.br/1500x1500/geladeira-side-by-side-brastemp-4-portas-frost-free-inverse-543l-bro90ak-consul/lojascolombooficial/1256593/05fb63f46a7c1441859c7ec03ae4ef32.jpeg",
-        preco: 21.998,
+        imagem:"img/Geladeira.webp",
+        preco: 21998,
 
     },
 ];
@@ -37,7 +37,7 @@ function renderItem(item){
 
     titulo.appendChild(titiloNode);
 
-    imagem.setAttribute("src",item,imagem);
+    imagem.setAttribute("src",item.imagem);
 
     divItem.classList.add("item");
     divItem.appendChild(imagem);
@@ -49,13 +49,36 @@ function renderItem(item){
     container.appendChild(divItem);
 }
 
+function calculaFrete(){
+    return 500.00;
+}
+
 function main(){
     const itens = buscaItens();
+    const frete = calculaFrete();
+
     const linkItens = document.querySelector("a[href = '#itens']");
+    const itensTotal = document.getElementById("itens-total");
+    const freteTotal = document.getElementById("frete-total");
+    const totalPedido = document.getElementById("pedido-total")
+
+    const formataDinheiro = new Intl.NumberFormat("pt-br",
+    {
+        style:"currency",
+        currency:"BRL"
+    });
+
     const quantidadeItens = itens.reduce(function(valorAnterior,item){
         return valorAnterior + item.quantidade;
+    },0); 
+
+    const subTotalItens = itens.reduce(function(valorAnterior, item){
+     return valorAnterior + item.quantidade * item.preco;
     },0);
 
+    totalPedido.innerHTML = formataDinheiro.format(frete + subTotalItens);
+    freteTotal.innerHTML = formataDinheiro.format(frete);
+    itensTotal.innerHTML = formataDinheiro.format(subTotalItens);
     linkItens.innerHTML = `${quantidadeItens} ${(quantidadeItens === 1 ? "item" : "itens")}`;
     
 
